@@ -208,4 +208,53 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 1920px) {
+  #application {
+    flex-direction: column;
+
+    & .tareas {
+      align-self: center;
+      width: 100%;
+    }
+
+    & .section_tareas {
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #application {
+    .section_tareas {
+      flex-direction: column-reverse;
+
+      & .listaTareas {
+        & ul {
+          & li {
+            width: max-content
+          }
+        }
+      }
+
+      & .tiempo {
+        margin: 0;
+        width: 100%;
+
+        & h2 {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #application {
+    & .tareas {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
 </style>
